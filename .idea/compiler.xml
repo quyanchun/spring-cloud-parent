@@ -6,8 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springcloudcommon" />
+        <module name="springcloudconfig" />
+        <module name="springcloudeureka" />
+        <module name="springcloudmessage" />
         <module name="springclouduser" />
         <module name="springclouduserapi" />
+        <module name="springcloudweb" />
+        <module name="springcloudzuul" />
       </profile>
     </annotationProcessing>
   </component>
