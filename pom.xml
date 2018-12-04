@@ -11,6 +11,10 @@
     <modules>
         <module>spring-cloud-api</module>
         <module>spring-cloud-user</module>
+        <module>spring-cloud-web</module>
+        <module>spring-cloud-config</module>
+        <module>spring-cloud-message</module>
+        <module>spring-cloud-eureka</module>
     </modules>
 
 
