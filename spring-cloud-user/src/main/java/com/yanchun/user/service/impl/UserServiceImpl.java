@@ -1,12 +1,10 @@
-package com.yanchun.user.serviceimpl;
+package com.yanchun.user.service.impl;
 
-import com.yanchun.entity.Passport;
 import com.yanchun.user.dao.PersonRepository;
+import com.yanchun.user.entity.Passport;
 import com.yanchun.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 /**
  * @Author quyanchun
@@ -18,7 +16,7 @@ public class UserServiceImpl implements UserService {
     private PersonRepository personRepository;
     @Override
     public Passport getPassportById(long id) {
-        Passport passport= personRepository.findById(id);
+        Passport passport = (Passport) personRepository.findById(id);
         return passport;
     }
 }

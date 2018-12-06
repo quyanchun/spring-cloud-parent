@@ -1,19 +1,39 @@
+server:
+  port: 10000
 spring:
   application:
     name: spring-cloud-user
+  cloud:
+    config: false
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://my.mysql.com:3306/spring_cloud?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    name: test
+    url: jdbc:mysql://my.mysql.com:3306/spring_cloud?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
     username: root
-    password: root
-    hikari:
-      minimum-idle: 5
-      maximum-pool-size: 20
-      connection-test-query: SELECT 1
+    password: abcd1234
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+
   jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-server:
-  port: 10000
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://my.eureka.com:8761/eureka/ #http://localhost:8761/eureka/
 

@@ -1,7 +1,7 @@
 package com.yanchun.user.controller;
 
 
-import com.yanchun.entity.Passport;
+import com.yanchun.user.entity.Passport;
 import com.yanchun.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
