@@ -1,6 +1,7 @@
 package com.yanchun.user.service;
 
-import com.yanchun.user.entity.Passport;
+
+import com.yanchun.entity.Passport;
 
 /**
  * @Author quyanchun

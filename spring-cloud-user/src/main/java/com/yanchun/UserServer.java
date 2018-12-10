@@ -1,4 +1,4 @@
-package com.yanchun.user;
+package com.yanchun;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

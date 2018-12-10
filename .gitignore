@@ -28,6 +28,8 @@ hs_err_pid*
 /.project
 /.idea/
 /*.iml
+*.iml
+.idea/
 /logs/
 /spring-cloud-web/springcloudweb.iml
 /spring-cloud-user/springclouduser.iml
