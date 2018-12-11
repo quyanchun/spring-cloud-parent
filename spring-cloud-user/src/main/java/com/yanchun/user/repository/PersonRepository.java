@@ -12,4 +12,6 @@ public interface PersonRepository extends JpaRepository<Passport, Long> , JpaSpe
 
     @Query(value = "select * from Passport where phone=:phone",nativeQuery = true)
     Passport findByPhone(@Param("phone") String phone);
+
+
 }

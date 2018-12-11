@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  * @Author quyanchun
- * @Date 2018/12/10
+ * @Date 2018/12/11
  */
 @Entity
 public class Passport implements Serializable {
@@ -22,6 +22,8 @@ public class Passport implements Serializable {
     private Timestamp createTime;
     private Timestamp lastTime;
     private Integer status;
+    private Integer regWay;
+    private Integer regType;
 
     @Id
     @Column(name = "id")
@@ -121,5 +123,25 @@ public class Passport implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(id, phone, password, email, unionid, createTime, lastTime, status);
+    }
+
+    @Basic
+    @Column(name = "reg_way")
+    public Integer getRegWay() {
+        return regWay;
+    }
+
+    public void setRegWay(Integer regWay) {
+        this.regWay = regWay;
+    }
+
+    @Basic
+    @Column(name = "reg_type")
+    public Integer getRegType() {
+        return regType;
+    }
+
+    public void setRegType(Integer regType) {
+        this.regType = regType;
     }
 }
