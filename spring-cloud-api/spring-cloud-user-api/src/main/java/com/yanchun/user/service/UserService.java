@@ -17,5 +17,11 @@ public interface UserService {
      */
     Passport getPassportById(long id) throws Exception;
 
+    /**
+     * 注册
+     * @param registerFromBean
+     * @return
+     * @throws Exception
+     */
     Long registerUser(RegisterFromBean registerFromBean) throws Exception;
 }
