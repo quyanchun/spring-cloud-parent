@@ -21,8 +21,8 @@ import java.util.UUID;
  */
 @Service
 public class VerificationServiceImpl implements VerificationService {
-
-//    private RedisUtil redisUtil=new RedisUtil();
+    @Autowired
+    private RedisUtil redisUtil;
 
     @Override
     public String createSmsCode(String mobile, Integer type) throws Exception {
@@ -33,13 +33,13 @@ public class VerificationServiceImpl implements VerificationService {
         map.put("code", code);
         map.put("mobile", mobile);
         try {
-//            redisUtil.set(RedisKeyConstants.SMS, map, RedisKeyConstants.SMS_TIMEOUT);
-            if (saveSmsAndSendCode(mobile, code, type))
+            redisUtil.set(RedisKeyConstants.SMS+uuid, map, RedisKeyConstants.SMS_TIMEOUT);
+//            if (saveSmsAndSendCode(mobile, code, type))
                 return uuid;
         } catch (Exception e) {
             throw e;
         }
-        return null;
+//        return null;
     }
 
     private boolean saveSmsAndSendCode(String mobile, String code, Integer type) throws Exception {

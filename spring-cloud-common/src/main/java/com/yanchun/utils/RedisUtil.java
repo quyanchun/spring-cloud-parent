@@ -1,5 +1,6 @@
 package com.yanchun.utils;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -8,15 +9,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
+@Component
 public class RedisUtil {
-  
-  
-    private RedisTemplate<String, Object> redisTemplate;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
       
-    public void setRedisTemplate(RedisTemplate<String, Object> redisTemplate) {  
-        this.redisTemplate = redisTemplate;  
-    }  
+//    public void setRedisTemplate(RedisTemplate<String, Object> redisTemplate) {
+//        this.redisTemplate = redisTemplate;
+//    }
     //=============================common============================  
     /** 
      * 指定缓存失效时间 
@@ -111,8 +112,8 @@ public class RedisUtil {
     public boolean set(String key,Object value,long time){  
         try {  
             if(time>0){  
-                redisTemplate.opsForValue().set(key, value, time, TimeUnit.SECONDS);  
-            }else{  
+                redisTemplate.opsForValue().set(key, value, time, TimeUnit.SECONDS);
+            }else{
                 set(key, value);  
             }  
             return true;  

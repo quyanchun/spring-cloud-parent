@@ -19,7 +19,7 @@ public class VerificationController {
     @Autowired
     private VerificationService verificationService;
 
-    @RequestMapping("sendSmsCode")
+    @RequestMapping("/sendSmsCode")
     public String sendSmsCode(@RequestParam("phone") String phone, @RequestParam("type") int type) {
         try {
             return verificationService.createSmsCode(phone, type);
