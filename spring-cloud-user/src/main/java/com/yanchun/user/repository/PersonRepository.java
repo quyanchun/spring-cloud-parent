@@ -1,6 +1,6 @@
 package com.yanchun.user.repository;
 
-import com.yanchun.entity.Passport;
+import com.yanchun.common.entity.Passport;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;

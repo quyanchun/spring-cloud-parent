@@ -1,18 +1,18 @@
 package com.yanchun.user.service.impl;
 
-import com.yanchun.constant.MqConstants;
-import com.yanchun.entity.Passport;
-import com.yanchun.frombean.RegisterFromBean;
+import com.yanchun.common.entity.Passport;
+import com.yanchun.common.exception.ParamException;
+import com.yanchun.common.frombean.RegisterFromBean;
 import com.yanchun.user.repository.PersonRepository;
 import com.yanchun.user.service.UserService;
+import com.yanchun.user.service.VerificationService;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.amqp.core.AmqpTemplate;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.sql.Timestamp;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +26,8 @@ public class UserServiceImpl implements UserService {
     private AmqpTemplate rabbitTemplate;
     @Autowired
     private PersonRepository personRepository;
-
+    @Autowired
+    private VerificationService verificationService;
     @Override
     public Passport getPassportById(long id) throws Exception {
         Optional<Passport> byId = personRepository.findById(id);
@@ -38,9 +39,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public Long registerUser(RegisterFromBean registerFromBean) throws Exception {
+    public boolean registerUser(RegisterFromBean registerFromBean) throws Exception {
+        String phone = registerFromBean.getPhone();
+        String smsCode = registerFromBean.getSmsCode();
+        String key = registerFromBean.getKey();
+        if(StringUtils.isEmpty(phone)||StringUtils.isEmpty(phone)||StringUtils.isEmpty(phone)||StringUtils.isEmpty(phone))
+            throw new ParamException("参数错误");
+        boolean flag = verificationService.matchSmsCode(phone, key, smsCode, false);
+        if(!flag)
+            return false;
         Passport passport = new Passport();
-        passport.setPhone(registerFromBean.getPhone());
+        passport.setPhone(phone);
         passport.setPassword(registerFromBean.getPassword());
         passport.setRegType(1);
         passport.setCreateTime(new Timestamp(System.currentTimeMillis()));
@@ -48,6 +57,6 @@ public class UserServiceImpl implements UserService {
         passport.setRegWay(1);
         passport = personRepository.save(passport);
         personRepository.flush();
-        return passport.getId();
+        return true;
     }
 }

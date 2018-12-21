@@ -10,7 +10,6 @@
         <module name="spring-cloud-config" />
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-message" />
-        <module name="spring-cloud-model" />
         <module name="spring-cloud-user" />
         <module name="spring-cloud-user-api" />
         <module name="spring-cloud-web" />

@@ -13,8 +13,14 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-cloud-user-api</module>
-        <module>spring-cloud-model</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.yanchun</groupId>
+            <artifactId>spring-cloud-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName><!--打jar包去掉版本号-->
         <plugins>

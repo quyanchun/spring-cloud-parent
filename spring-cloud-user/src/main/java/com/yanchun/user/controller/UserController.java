@@ -1,9 +1,10 @@
 package com.yanchun.user.controller;
 
 
-import com.yanchun.entity.Passport;
-import com.yanchun.frombean.RegisterFromBean;
+import com.yanchun.common.entity.Passport;
+import com.yanchun.common.frombean.RegisterFromBean;
 import com.yanchun.user.service.UserService;
+import com.yanchun.user.service.VerificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     @Autowired
     private UserService userService;
-
 
     @ResponseBody
     @RequestMapping("/getPassport")
@@ -31,13 +31,14 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("/register")
-    public Long register(@RequestBody RegisterFromBean registerFromBean) throws Exception {
-        try {
-            Long aLong = userService.registerUser(registerFromBean);
-            return aLong;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+    public String register(@RequestBody RegisterFromBean registerFromBean) throws Exception {
+//        try {
+            boolean flag = userService.registerUser(registerFromBean);
+            if (flag)
+                return "成功";
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        return "失败";
     }
 }

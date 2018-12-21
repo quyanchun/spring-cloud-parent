@@ -1,8 +1,8 @@
 package com.yanchun.user.service;
 
 
-import com.yanchun.entity.Passport;
-import com.yanchun.frombean.RegisterFromBean;
+import com.yanchun.common.entity.Passport;
+import com.yanchun.common.frombean.RegisterFromBean;
 
 /**
  * @Author quyanchun
@@ -23,5 +23,5 @@ public interface UserService {
      * @return
      * @throws Exception
      */
-    Long registerUser(RegisterFromBean registerFromBean) throws Exception;
+    boolean registerUser(RegisterFromBean registerFromBean) throws Exception;
 }
