@@ -6,19 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-api-user" />
         <module name="spring-cloud-common" />
         <module name="spring-cloud-config" />
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-message" />
         <module name="spring-cloud-user" />
         <module name="spring-cloud-user-api" />
-        <module name="spring-cloud-web" />
+        <module name="spring-cloud-web-pc" />
         <module name="spring-cloud-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-cloud" target="1.8" />
       <module name="spring-cloud-api" target="1.8" />
+      <module name="spring-cloud-api-user" target="1.8" />
       <module name="spring-cloud-common" target="1.8" />
       <module name="spring-cloud-config" target="1.8" />
       <module name="spring-cloud-eureka" target="1.8" />
@@ -26,7 +28,7 @@
       <module name="spring-cloud-model" target="1.8" />
       <module name="spring-cloud-user" target="1.8" />
       <module name="spring-cloud-user-api" target="1.8" />
-      <module name="spring-cloud-web" target="1.8" />
+      <module name="spring-cloud-web-pc" target="1.8" />
       <module name="spring-cloud-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>

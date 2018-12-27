@@ -11,7 +11,7 @@
     <modules>
         <module>spring-cloud-api</module>
         <module>spring-cloud-user</module>
-        <module>spring-cloud-web</module>
+        <module>spring-cloud-web-pc</module>
         <module>spring-cloud-config</module>
         <module>spring-cloud-message</module>
         <module>spring-cloud-eureka</module>
@@ -55,6 +55,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>

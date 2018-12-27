@@ -12,7 +12,7 @@
     <artifactId>spring-cloud-api</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-cloud-user-api</module>
+        <module>spring-cloud-api-user</module>
     </modules>
     <dependencies>
         <dependency>

@@ -29,7 +29,7 @@ public enum RegisterTypeEnum {
         return false;
     }
     //通过type获取UserIdentityEnum
-    public static RegisterTypeEnum getLoginAndRegisterTypeEnum(Integer type) {
+    public static RegisterTypeEnum getRegisterTypeEnum(Integer type) {
         for (RegisterTypeEnum ue : RegisterTypeEnum.values()) {
             if (ue.getType().equals(type)) {
                 return ue;

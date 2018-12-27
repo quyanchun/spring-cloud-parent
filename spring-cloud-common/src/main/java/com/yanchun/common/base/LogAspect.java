@@ -22,7 +22,7 @@ public class LogAspect {
 	private JSONObject jsonObject = new JSONObject();
 
 	// 申明一个切点 里面是 execution表达式
-	@Pointcut("execution(public * com.yanchun.*.service.*.*(..))")
+	@Pointcut("execution(public * com.yanchun.*.controller.*.*(..))")
 	private void controllerAspect() {
 	}
 
