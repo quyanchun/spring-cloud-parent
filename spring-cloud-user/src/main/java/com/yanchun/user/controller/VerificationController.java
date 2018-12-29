@@ -25,12 +25,12 @@ import java.util.HashMap;
 public class VerificationController extends ResultBase {
     private static final Logger LOGGER = LoggerFactory.getLogger(VerificationController.class);
     @Autowired
-    private VerificationService verificationServiceFeign;
+    private VerificationService verificationService;
 
     @RequestMapping("/sendSmsCode")
     public ResponseBase sendSmsCode(@RequestParam("phone") String phone, @RequestParam("type") int type) {
         try {
-            String key = verificationServiceFeign.createSmsCode(phone, type);
+            String key = verificationService.createSmsCode(phone, type);
             HashMap hashMap = new HashMap();
             hashMap.put("key", key);
             return success(hashMap);
@@ -43,7 +43,7 @@ public class VerificationController extends ResultBase {
     @RequestMapping("/matchSmsCode")
     public ResponseBase matchSmsCode(@RequestBody MatchCodeFromBean matchCodeFromBean) {
         try {
-            boolean flag = verificationServiceFeign.matchSmsCode(matchCodeFromBean.getPhone(), matchCodeFromBean.getKey(), matchCodeFromBean.getSmsCode(), false);
+            boolean flag = verificationService.matchSmsCode(matchCodeFromBean.getPhone(), matchCodeFromBean.getKey(), matchCodeFromBean.getSmsCode(), false);
             if (flag)
                return success();
             return error(ResultEnum.CODE_ERROR);

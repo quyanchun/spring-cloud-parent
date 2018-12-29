@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Author quyanchun
  * @Date 2018/12/17
  */
-//@FeignClient("VerificationService")
-@FeignClient(name="spring-cloud-user")
-@Component
+
 public interface VerificationService {
     /**
      * 生成短信验证码

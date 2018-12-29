@@ -1,6 +1,7 @@
-package com.yanchun.controller;
+package com.yanchun.web.controller;
 
 import com.yanchun.user.service.UserService;
+import com.yanchun.web.feign.UserServiceFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,12 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class TestController {
+
     @Autowired
-    private UserService userService;
+    private UserServiceFeign userServiceFeign;
     @RequestMapping("/test/tt")
     public String  getTest(){
-
-        String test = userService.getTest();
         return "success";
     }
 }

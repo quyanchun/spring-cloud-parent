@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Author quyanchun
  * @Date 2018/12/6
  */
-@FeignClient(name="http://spring-cloud-user")
-@Component
+
 public interface UserService {
 
     @RequestMapping("/getTest")
