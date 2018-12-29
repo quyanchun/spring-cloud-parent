@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://my.mysql.com:3306/spring_cloud?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: abcd1234
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+# mq
+  rabbitmq:
+    host: my.rabbitmq.com
+    port: 5672
+    username: myrabbitmq
+    password: abcd1234
+# redis
+  redis:
+    host: my.redis.com
+    port: 6379
+    password: zqslR4ujggmpDjrZ
+    timeout: 10s
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-active: 8
+        max-wait: -1ms
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://my.eureka.com:8761/eureka/ #http://localhost:8761/eureka/

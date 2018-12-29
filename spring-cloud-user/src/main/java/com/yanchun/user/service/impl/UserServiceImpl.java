@@ -4,20 +4,17 @@ import com.yanchun.common.entity.Passport;
 import com.yanchun.common.enums.RegisterTypeEnum;
 import com.yanchun.common.exception.ParamException;
 import com.yanchun.common.exception.VerifycodeException;
-import com.yanchun.common.frombean.RegisterFromBean;
 import com.yanchun.user.repository.PersonRepository;
 import com.yanchun.user.service.UserService;
 import com.yanchun.user.service.VerificationService;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.transaction.Transactional;
 import java.sql.Timestamp;
-import java.util.List;
-import java.util.Optional;
+
 
 /**
  * @Author quyanchun
@@ -30,11 +27,6 @@ public class UserServiceImpl implements UserService {
     private PersonRepository personRepository;
     @Autowired
     private VerificationService verificationService;
-
-    @Override
-    public String getTest() {
-        return "000000000000000";
-    }
 
     @Override
     public Passport getPassportById(long id) throws Exception {

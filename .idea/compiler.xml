@@ -18,7 +18,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-cloud" target="1.8" />
       <module name="spring-cloud-api" target="1.8" />
       <module name="spring-cloud-api-user" target="1.8" />
       <module name="spring-cloud-common" target="1.8" />
@@ -26,6 +25,7 @@
       <module name="spring-cloud-eureka" target="1.8" />
       <module name="spring-cloud-message" target="1.8" />
       <module name="spring-cloud-model" target="1.8" />
+      <module name="spring-cloud-parent" target="1.8" />
       <module name="spring-cloud-user" target="1.8" />
       <module name="spring-cloud-user-api" target="1.8" />
       <module name="spring-cloud-web-pc" target="1.8" />

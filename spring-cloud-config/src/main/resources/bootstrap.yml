@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/configs/{profile}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://my.eureka.com:8761/eureka/ #http://localhost:8761/eureka/

@@ -14,9 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 public interface UserService {
 
-    @RequestMapping("/getTest")
-    String getTest();
-
     /**
      * 获取passport表
      *
