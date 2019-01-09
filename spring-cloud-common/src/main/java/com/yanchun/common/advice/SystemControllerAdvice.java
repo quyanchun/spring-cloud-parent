@@ -24,8 +24,8 @@ public class SystemControllerAdvice {
     @ExceptionHandler(value = Exception.class)
     public Map errorHandler(Exception ex) {
         Map map = new HashMap();
-        map.put("code", 100);
-        map.put("msg", ex.getMessage());
+        map.put("rtnCode", 4000);
+        map.put("rtnMsg", ex.getMessage());
         return map;
     }
 
@@ -41,7 +41,7 @@ public class SystemControllerAdvice {
         LOGGER.error("=========ParamException:{}", ex);
         Map map = new HashMap();
         map.put("code", 4000);
-        map.put("msg", ex.getMessage());
+        map.put("rtnMsg", ex.getMessage());
         return map;
     }
 }

@@ -8,7 +8,7 @@ import lombok.Data;
  */
 @Data
 public class LoginFromBean {
-    private String code;//手机验证码
+    private String smsCode;//手机验证码
     private String key;//验证码对应的key
     private String phone;//手机号
     private String password;//密码

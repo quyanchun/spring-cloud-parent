@@ -2,7 +2,7 @@ package com.yanchun.user.service;
 
 
 import com.yanchun.common.entity.Passport;
-import org.springframework.cloud.openfeign.FeignClient;
+import com.yanchun.common.frombean.LoginFromBean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,10 +21,11 @@ public interface UserService {
      * @return
      */
     @RequestMapping("/getPassportById")
-    Passport getPassportById(@RequestParam("id")long id) throws Exception;
+    Passport getPassportById(@RequestParam("id") long id) throws Exception;
 
     /**
      * 通过phone获取passport
+     *
      * @param phone
      * @return
      * @throws Exception
@@ -44,7 +45,8 @@ public interface UserService {
      * @throws Exception
      */
     @RequestMapping("/registerUser")
-    Long registerUser(@RequestParam("phone") String phone, @RequestParam("smsCode") String smsCode,@RequestParam("key") String key,@RequestParam("password")  String password,@RequestParam("type")  Integer type) throws Exception;
+    Long registerUser(@RequestParam("phone") String phone, @RequestParam("smsCode") String smsCode, @RequestParam("key") String key, @RequestParam("password") String password, @RequestParam("type") Integer type) throws Exception;
 
+    Passport login(LoginFromBean loginFromBean) throws Exception;
 
 }

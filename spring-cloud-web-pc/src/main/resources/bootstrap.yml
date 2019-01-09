@@ -28,17 +28,17 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
-
-  jpa:
-    properties:
-      hibernate:
-        format_sql: true
-        show_sql: true
-  rabbitmq:
-    host: my.rabbitmq.com
-    port: 5672
-    username: myrabbitmq
-    password: abcd1234
+#
+#  jpa:
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        show_sql: true
+#  rabbitmq:
+#    host: my.rabbitmq.com
+#    port: 5672
+#    username: myrabbitmq
+#    password: abcd1234
 eureka:
   client:
     serviceUrl:

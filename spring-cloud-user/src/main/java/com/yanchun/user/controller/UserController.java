@@ -9,6 +9,7 @@ import com.yanchun.common.enums.RegisterTypeEnum;
 import com.yanchun.common.enums.ResultEnum;
 import com.yanchun.common.exception.ParamException;
 import com.yanchun.common.exception.VerifycodeException;
+import com.yanchun.common.frombean.LoginFromBean;
 import com.yanchun.common.frombean.RegisterFromBean;
 import com.yanchun.common.utils.PhoneUtil;
 import com.yanchun.user.service.UserService;
@@ -31,7 +32,7 @@ public class UserController extends ResultBase {
     @Autowired
     private UserService userService;
 
-    @ResponseBody
+
     @RequestMapping("/register")
     public ResponseBase register(@RequestBody RegisterFromBean registerFromBean) throws Exception {
         try {
@@ -56,6 +57,29 @@ public class UserController extends ResultBase {
             return error(ResultEnum.PARAMETER_ERROR);
         } catch (VerifycodeException e) {
             LOGGER.error("==========register验证码错误:{}", JSON.toJSONString(registerFromBean));
+            return error(ResultEnum.CODE_ERROR);
+        } catch (Exception e) {
+            LOGGER.error("==========Exception:", e);
+        }
+        return systemError();
+    }
+
+    @RequestMapping("/login")
+    public ResponseBase login(@RequestBody LoginFromBean loginFromBean) throws Exception {
+        try {
+            //验证参数
+            String phone = loginFromBean.getPhone();
+            //1.判断账号是否已被注册
+            Passport passport = userService.getPassportByPhone(phone);
+            if (passport == null)
+                return error(ResultEnum.PHONE_UNREGISTER_ERROR);
+            passport = userService.login(loginFromBean);
+            return success(passport);
+        } catch (ParamException e) {
+            LOGGER.error("==========register参数错误:{}", JSON.toJSONString(loginFromBean));
+            return error(ResultEnum.PARAMETER_ERROR);
+        } catch (VerifycodeException e) {
+            LOGGER.error("==========register验证码错误:{}", JSON.toJSONString(loginFromBean));
             return error(ResultEnum.CODE_ERROR);
         } catch (Exception e) {
             LOGGER.error("==========Exception:", e);

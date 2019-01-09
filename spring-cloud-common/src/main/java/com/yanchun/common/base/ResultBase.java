@@ -38,4 +38,8 @@ public class ResultBase {
     public ResponseBase setResult(Integer code, String msg, Object data) {
         return new ResponseBase(code, msg, data);
     }
+
+    public void printResult(Integer code, String msg, Object data) {
+        ResponseBase.printResult(code, msg, data);
+    }
 }

@@ -1,0 +1,12 @@
+host:
+127.0.0.1  my.eureka.com
+127.0.0.1  my.rabbitmq.com
+127.0.0.1  my.mysql.com
+39.97.7.113 my.redis.com
+
+port
+spring-cloud-eureka:8761
+spring-cloud-user:10001
+spring-cloud-config:10003
+spring-cloud-zuul:10005
+spring-cloud-message:10010

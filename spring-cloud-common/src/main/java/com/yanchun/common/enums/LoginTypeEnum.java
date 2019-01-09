@@ -30,7 +30,7 @@ public enum LoginTypeEnum {
         return false;
     }
     //通过type获取UserIdentityEnum
-    public static LoginTypeEnum getLoginAndRegisterTypeEnum(Integer type) {
+    public static LoginTypeEnum getLoginTypeEnum(Integer type) {
         for (LoginTypeEnum ue : LoginTypeEnum.values()) {
             if (ue.getType().equals(type)) {
                 return ue;

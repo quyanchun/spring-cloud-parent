@@ -1,0 +1,24 @@
+server:
+  port: 20000
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: spring-cloud-zuul
+  profiles:
+    active: native
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: spring-cloud-config
+      profile: dev
+      fail-fast: true
+zuul:
+  routes:
+    api-a:
+      path: /api-user/**
+      service-id: spring-cloud-user
+    api-b:
+      path: /api-message/**
+      service-id: spring-cloud-message
