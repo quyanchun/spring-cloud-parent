@@ -92,20 +92,6 @@ public class User implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id &&
-                passportId == user.passportId &&
-                Objects.equals(nickName, user.nickName) &&
-                Objects.equals(gender, user.gender) &&
-                Objects.equals(headImgUrl, user.headImgUrl) &&
-                Objects.equals(address, user.address) &&
-                Objects.equals(sign, user.sign);
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(id, passportId, nickName, gender, headImgUrl, address, sign);
     }

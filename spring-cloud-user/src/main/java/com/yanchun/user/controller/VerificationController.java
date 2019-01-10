@@ -6,6 +6,7 @@ import com.yanchun.common.base.ResultBase;
 import com.yanchun.common.enums.ResultEnum;
 import com.yanchun.common.frombean.MatchCodeFromBean;
 import com.yanchun.user.service.VerificationService;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,11 +32,13 @@ public class VerificationController extends ResultBase {
     public ResponseBase sendSmsCode(@RequestParam("phone") String phone, @RequestParam("type") int type) {
         try {
             String key = verificationService.createSmsCode(phone, type);
+            if(StringUtils.isEmpty(key))
+                return error(ResultEnum.OPERATE_ERROR);
             HashMap hashMap = new HashMap();
             hashMap.put("key", key);
             return success(hashMap);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error("==========短信发送失败",e);
         }
         return null;
     }

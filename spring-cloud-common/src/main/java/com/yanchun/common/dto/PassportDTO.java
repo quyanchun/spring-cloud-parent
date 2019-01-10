@@ -1,6 +1,6 @@
-package com.yanchun.common.entity;
+package com.yanchun.common.dto;
 
-import javax.persistence.*;
+
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
@@ -9,8 +9,7 @@ import java.util.Objects;
  * @Author quyanchun
  * @Date 2018/12/11
  */
-@Entity
-public class Passport implements Serializable {
+public class PassportDTO  {
     private long id;
     private String phone;
     private String password;
@@ -22,9 +21,6 @@ public class Passport implements Serializable {
     private Integer regWay;
     private Integer regType;
 
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)//save返回id
     public long getId() {
         return id;
     }
@@ -33,8 +29,6 @@ public class Passport implements Serializable {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "phone")
     public String getPhone() {
         return phone;
     }
@@ -43,8 +37,6 @@ public class Passport implements Serializable {
         this.phone = phone;
     }
 
-    @Basic
-    @Column(name = "password")
     public String getPassword() {
         return password;
     }
@@ -53,8 +45,6 @@ public class Passport implements Serializable {
         this.password = password;
     }
 
-    @Basic
-    @Column(name = "email")
     public String getEmail() {
         return email;
     }
@@ -63,8 +53,6 @@ public class Passport implements Serializable {
         this.email = email;
     }
 
-    @Basic
-    @Column(name = "unionid")
     public String getUnionid() {
         return unionid;
     }
@@ -73,8 +61,6 @@ public class Passport implements Serializable {
         this.unionid = unionid;
     }
 
-    @Basic
-    @Column(name = "create_time")
     public Timestamp getCreateTime() {
         return createTime;
     }
@@ -83,8 +69,6 @@ public class Passport implements Serializable {
         this.createTime = createTime;
     }
 
-    @Basic
-    @Column(name = "last_time")
     public Timestamp getLastTime() {
         return lastTime;
     }
@@ -93,8 +77,6 @@ public class Passport implements Serializable {
         this.lastTime = lastTime;
     }
 
-    @Basic
-    @Column(name = "status")
     public Integer getStatus() {
         return status;
     }
@@ -104,27 +86,10 @@ public class Passport implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Passport passport = (Passport) o;
-        return id == passport.id &&
-                Objects.equals(phone, passport.phone) &&
-                Objects.equals(password, passport.password) &&
-                Objects.equals(email, passport.email) &&
-                Objects.equals(unionid, passport.unionid) &&
-                Objects.equals(createTime, passport.createTime) &&
-                Objects.equals(lastTime, passport.lastTime) &&
-                Objects.equals(status, passport.status);
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(id, phone, password, email, unionid, createTime, lastTime, status);
     }
 
-    @Basic
-    @Column(name = "reg_way")
     public Integer getRegWay() {
         return regWay;
     }
@@ -133,8 +98,6 @@ public class Passport implements Serializable {
         this.regWay = regWay;
     }
 
-    @Basic
-    @Column(name = "reg_type")
     public Integer getRegType() {
         return regType;
     }

@@ -4,6 +4,7 @@ package com.yanchun.user.controller;
 import com.alibaba.fastjson.JSON;
 import com.yanchun.common.base.ResponseBase;
 import com.yanchun.common.base.ResultBase;
+import com.yanchun.common.dto.PassportDTO;
 import com.yanchun.common.entity.Passport;
 import com.yanchun.common.enums.RegisterTypeEnum;
 import com.yanchun.common.enums.ResultEnum;
@@ -18,7 +19,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -43,8 +43,8 @@ public class UserController extends ResultBase {
             String password = registerFromBean.getPassword();
             Integer type = registerFromBean.getType();
             //1.判断账号是否已被注册
-            Passport passport = userService.getPassportByPhone(phone);
-            if (passport != null)
+            PassportDTO passportDTO = userService.getPassportByPhone(phone);
+            if (passportDTO != null)
                 return error(ResultEnum.PHONE_REGISTER_ERROR);
             if (!RegisterTypeEnum.checkType(type) || !PhoneUtil.checkPhone(phone))
                 return error(ResultEnum.PARAMETER_ERROR);
@@ -70,11 +70,11 @@ public class UserController extends ResultBase {
             //验证参数
             String phone = loginFromBean.getPhone();
             //1.判断账号是否已被注册
-            Passport passport = userService.getPassportByPhone(phone);
-            if (passport == null)
+            PassportDTO passportDTO = userService.getPassportByPhone(phone);
+            if (passportDTO == null)
                 return error(ResultEnum.PHONE_UNREGISTER_ERROR);
-            passport = userService.login(loginFromBean);
-            return success(passport);
+              passportDTO = userService.login(loginFromBean);
+            return success(passportDTO);
         } catch (ParamException e) {
             LOGGER.error("==========register参数错误:{}", JSON.toJSONString(loginFromBean));
             return error(ResultEnum.PARAMETER_ERROR);

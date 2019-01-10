@@ -1,8 +1,8 @@
 server:
   port: 20000
 spring:
-  main:
-    allow-bean-definition-overriding: true
+#  main:
+#    allow-bean-definition-overriding: true
   application:
     name: spring-cloud-zuul
   profiles:
@@ -22,3 +22,19 @@ zuul:
     api-b:
       path: /api-message/**
       service-id: spring-cloud-message
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 60000
+ribbon:
+  ReadTimeout: 60000  # 单位毫秒数
+  SocketTimeout: 60000
+hystrix:
+  command:
+   default:
+    execution:
+     isolation:
+      thread:
+       timeoutInMilliseconds: 60000
+
+
+

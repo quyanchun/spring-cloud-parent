@@ -33,7 +33,7 @@ public class VerificationServiceImpl implements VerificationService {
     public String createSmsCode(String phone, Integer type) throws Exception {
         String uuid = UUID.randomUUID().toString();
         String code = CodeUtil.randomCode(6);
-        code = "111111";
+//        code = "111111";
         Map<String, String> map = new HashMap<>(2);
         map.put("code", code);
         map.put("phone", phone);

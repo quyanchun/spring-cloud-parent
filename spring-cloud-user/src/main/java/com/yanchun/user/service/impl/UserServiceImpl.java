@@ -1,6 +1,7 @@
 package com.yanchun.user.service.impl;
 
 import com.yanchun.common.base.ResultBase;
+import com.yanchun.common.dto.PassportDTO;
 import com.yanchun.common.entity.Passport;
 import com.yanchun.common.enums.LoginTypeEnum;
 import com.yanchun.common.enums.RegisterTypeEnum;
@@ -15,6 +16,7 @@ import com.yanchun.user.repository.UserRepository;
 import com.yanchun.user.service.UserService;
 import com.yanchun.user.service.VerificationService;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -36,15 +38,19 @@ public class UserServiceImpl extends ResultBase implements UserService {
     private VerificationService verificationService;
 
     @Override
-    public Passport getPassportById(long id) throws Exception {
+    public PassportDTO getPassportById(long id) throws Exception {
         Passport passport = userRepository.findById(id).get();
-
-        return passport;
+        PassportDTO passportDTO=new PassportDTO();
+        BeanUtils.copyProperties(passport,passportDTO);
+        return passportDTO;
     }
 
     @Override
-    public Passport getPassportByPhone(String phone) throws Exception {
-        return userRepository.findByPhone(phone);
+    public PassportDTO getPassportByPhone(String phone) throws Exception {
+        Passport passport = userRepository.findByPhone(phone);
+        PassportDTO passportDTO=new PassportDTO();
+        BeanUtils.copyProperties(passport,passportDTO);
+        return passportDTO;
     }
 
     @Override
@@ -74,7 +80,8 @@ public class UserServiceImpl extends ResultBase implements UserService {
     }
 
     @Override
-    public Passport login(LoginFromBean loginFromBean) throws Exception {
+    public PassportDTO login(LoginFromBean loginFromBean) throws Exception {
+        PassportDTO passportDTO=new PassportDTO();
         Passport passport = null;
         switch (LoginTypeEnum.getLoginTypeEnum(loginFromBean.getType())) {
             //手机验证码登陆
@@ -87,16 +94,19 @@ public class UserServiceImpl extends ResultBase implements UserService {
                     printResult(ResultEnum.CODE_ERROR.getCode(), ResultEnum.CODE_ERROR.getMsg(), null);
                     return null;
                 }
-                return passport;
+                BeanUtils.copyProperties(passport,passportDTO);
+                return passportDTO;
             //账户密码登陆
             case PHONE_PASSWORD:
-                if (!PhoneUtil.checkPhone(loginFromBean.getPhone()))
+                String phone=loginFromBean.getPhone();
+                if (!PhoneUtil.checkPhone(phone))
                     throw new ParamException("手机号不合法");
-                passport = userRepository.findByPhone(loginFromBean.getPhone());
+                passport =  userRepository.findByPhone(phone);
 
                 String insPassword = MD5.encode(loginFromBean.getPassword());
 
-                return passport;
+                BeanUtils.copyProperties(passport,passportDTO);
+                return passportDTO;
             //微信登陆
             case WECHAT:
                 String accessToken = loginFromBean.getAccessToken();
@@ -112,7 +122,8 @@ public class UserServiceImpl extends ResultBase implements UserService {
                     loginReturnUserInfoVO.setAccessToken(unionid);
                     printResult(ResultEnum.OPERATE_SUCCESS.getCode(), ResultEnum.OPERATE_SUCCESS.getMsg(), loginReturnUserInfoVO);
                 }
-                return passport;
+                BeanUtils.copyProperties(passport,passportDTO);
+                return passportDTO;
             default:
                 throw new ParamException("type参数错误");
         }

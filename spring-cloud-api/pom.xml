@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-cloud-api-user</module>
+        <module>spring-cloud-api-common</module>
     </modules>
     <dependencies>
         <dependency>

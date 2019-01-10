@@ -11,6 +11,7 @@ public enum ResultEnum {
     PHONE_UNREGISTER_ERROR(4004, "账号未注册"),
 
     SING_ERROR(9000,"签名错误"),
+    OPERATE_ERROR(9996, "操作失败"),
     ERROR(9999, "系统错误");
     private int code;
     private String msg;
