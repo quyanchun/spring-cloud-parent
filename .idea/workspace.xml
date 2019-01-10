@@ -2,33 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e17ec43-41f5-48d2-8460-e0d5d62c7000" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Remarks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/vo/LoginReturnUserInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-config/src/main/resources/configs/dev/spring-cloud-zuul.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/yanchun/ZuulServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/constant/PermitAllUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/PasswordEncoderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/VerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/VerificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-common/spring-cloud-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/spring-cloud-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/advice/SystemControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/advice/SystemControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResponseBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResponseBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResultBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResultBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/LoginTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/LoginTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/frombean/LoginFromBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/frombean/LoginFromBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/model/UserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/model/UserSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-config/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-message/spring-cloud-message.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-message/spring-cloud-message.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-user/spring-cloud-user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-user/spring-cloud-user.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-web-pc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-web-pc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-web-pc/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-web-pc/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-zuul/spring-cloud-zuul.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-zuul/spring-cloud-zuul.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-cloud-web/target/" />
@@ -44,6 +32,7 @@
     <ignored path="$PROJECT_DIR$/spring-cloud-eureka/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-web-pc/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-common/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,32 +85,34 @@
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Remarks" value="2" />
-          <entry key="class" value="20" />
+          <entry key="Remarks" value="3" />
+          <entry key="class" value="31" />
           <entry key="gitignore" value="3" />
           <entry key="iml" value="2" />
-          <entry key="java" value="343" />
+          <entry key="java" value="477" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="95" />
-          <entry key="yml" value="52" />
+          <entry key="template" value="12" />
+          <entry key="xml" value="106" />
+          <entry key="yml" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="20" />
+          <entry key="CLASS" value="31" />
           <entry key="Git file" value="3" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="343" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="477" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="95" />
-          <entry key="YAML" value="52" />
+          <entry key="XML" value="106" />
+          <entry key="YAML" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -129,19 +120,19 @@
           <entry key="Remarks" value="23" />
           <entry key="dummy" value="44" />
           <entry key="gitignore" value="2" />
-          <entry key="java" value="4598" />
+          <entry key="java" value="4974" />
           <entry key="txt" value="81" />
-          <entry key="xml" value="174" />
-          <entry key="yml" value="259" />
+          <entry key="xml" value="194" />
+          <entry key="yml" value="404" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="2" />
-          <entry key="JAVA" value="4598" />
+          <entry key="JAVA" value="4974" />
           <entry key="PLAIN_TEXT" value="148" />
-          <entry key="XML" value="174" />
-          <entry key="YAML" value="259" />
+          <entry key="XML" value="194" />
+          <entry key="YAML" value="404" />
         </counts>
       </usages-collector>
     </session>
@@ -152,10 +143,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/frombean/LoginFromBean.java">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="317">
+              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/constant/PermitAllUrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserDetailServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="32" column="86" lean-forward="true" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+            <state relative-caret-position="-653">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,10 +188,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/VerificationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+            <state relative-caret-position="188">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,68 +200,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/ResultEnum.java">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/PasswordEncoderConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResultBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+            <state relative-caret-position="255">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResponseBase.java">
+        <entry file="jar://D:/mymaven/org/springframework/security/spring-security-crypto/5.0.10.RELEASE/spring-security-crypto-5.0.10.RELEASE.jar!/org/springframework/security/crypto/password/PasswordEncoder.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Remarks">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/UserServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/src/main/resources/bootstrap.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/repository/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/LoginTypeEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="323">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#966#967#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -264,9 +246,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>!--打jar包去掉版本号--</find>
-      <find>8888</find>
-      <find>Passport</find>
       <find>public class Passport</find>
       <find>&amp;gt;</find>
       <find>&amp;lt;</find>
@@ -283,6 +262,20 @@
       <find>UserServiceFeign</find>
       <find>netf</find>
       <find>classpath:/configs/</find>
+      <find>adno</find>
+      <find>morefun</find>
+      <find>AbstractAuditDTO</find>
+      <find>equ</find>
+      <find>equals</find>
+      <find>dtontity</find>
+      <find>getPackage</find>
+      <find>parentPackage</find>
+      <find>oauth2</find>
+      <find>loginUser</find>
+      <find>authenticationManager</find>
+      <find>passwordEncoder</find>
+      <find>oauth_client_details</find>
+      <find>configure</find>
     </findStrings>
     <replaceStrings>
       <replace>&gt;</replace>
@@ -295,57 +288,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-cloud-web/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/spring-cloud-web/src/main/java/com/yanchun/web/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-api/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/WebServer.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/MqServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/exception/VerifycodeException.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/feign/UserFeign.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/controller/VerificationController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/TestController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/FooController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/UserServer.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/WebPcServer.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/config/FooConfiguration.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/config/FooController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/VerificationController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/VerificationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/feign/UserServiceFeign.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/feign/VerificationServiceFeign.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-config/src/main/java/ConfigService.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-config/src/main/java/com/yanchun/ConfigService.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-config/src/main/resources/configs/dev/spring-cloud-user.yml" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/spring-cloud-config/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/Remarks" />
-        <option value="$PROJECT_DIR$/spring-cloud-config/src/main/resources/configs/dev/spring-cloud-zuul.yml" />
-        <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/yanchun/GatewayServiceZuulApplication.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/VerificationService.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/yanchun/ZuulServer.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/advice/SystemControllerAdvice.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/LoginTypeEnum.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/UserService.java" />
         <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/repository/PersonRepository.java" />
         <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/vo/LoginReturnUserInfoVO.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResultBase.java" />
         <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/frombean/LoginFromBean.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/ResultEnum.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResponseBase.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/VerificationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResultBase.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/VerificationController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/ConvertorGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/ControllerGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/ReplaceFilter.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/RepositoryGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/ServiceGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/ServiceImplGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/SkipFilter.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/AbstractGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/model/entity/User.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/adonboot/model/entity/User.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/sourcegenerator/utils/GeneratorConfiguration.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/SourceGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/adonboot/controllerntity/PassportController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/adonboot/servicentity/impl/PassportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/adonboot/model/entity/Passport.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/adonboot/dtontity/PassportDTO.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/DtoGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/utils/GeneratorConfiguration.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/SourceGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/entity/User.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/entity/Passport.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-web-pc/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/test.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/MySecurityConfig.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/RedisClientDetailsService.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/RedisAuthorizationCodeServices.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/model/UserSession.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/RandomAuthenticationKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/PasswordEncoderConfig.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserDetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/constant/PermitAllUrl.java" />
       </list>
     </option>
   </component>
@@ -401,80 +394,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -520,6 +445,28 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yanchun" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yanchun" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yanchun" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -532,63 +479,13 @@
               <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-web-pc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-web-pc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-web-pc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-web-pc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-web-pc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yanchun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-web-pc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yanchun" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-web-pc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -600,32 +497,33 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546995381845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547114214145" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yanchun.user.service.impl" />
+      <recent name="com.yanchun.user.config" />
+      <recent name="com.yanchun.common.constant" />
+      <recent name="com.yanchun" />
+      <recent name="com.yanchun.common.vo" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.yanchun.entity" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yanchun.common.vo" />
-      <recent name="com.yanchun.user.controller" />
-      <recent name="com.yanchun" />
-      <recent name="com.yanchun.common.exception" />
-      <recent name="com.yanchun.exception" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-config\src\main\resources\configs\dev" />
-      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-zuul\src\main\resources" />
+      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-user\src\main\java\com\yanchun\user\config" />
+      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-api\spring-cloud-api-common\src\main\java\com\yanchun\common\entity" />
+      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-user\src\main\resources" />
       <recent name="D:\mywork\spring-cloud-parent\spring-cloud-user\src\main\java\com\yanchun\user" />
-      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-web\src\main\java\com\yanchun\web" />
-      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-web\src\main\resources" />
+      <recent name="D:\mywork\spring-cloud-parent\spring-cloud-common\src\main\java\com\yanchun\common\adonboot" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -641,53 +539,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.UserServer">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="spring-cloud-parent" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="spring-cloud-parent" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ConfigService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-cloud-config" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yanchun.ConfigService" />
@@ -744,12 +595,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.ZuulServer" />
-      <item itemvalue="Spring Boot.UserServer" />
       <item itemvalue="Spring Boot.EurekaServer" />
+      <item itemvalue="Spring Boot.UserServer" />
       <item itemvalue="Spring Boot.WebPcServer" />
       <item itemvalue="Spring Boot.ConfigService" />
       <item itemvalue="Spring Boot.MessageServer" />
+      <item itemvalue="Spring Boot.ZuulServer" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -779,7 +630,8 @@
       <workItem from="1545725564906" duration="31535000" />
       <workItem from="1546052481054" duration="9577000" />
       <workItem from="1546821407401" duration="51000" />
-      <workItem from="1546828920977" duration="19473000" />
+      <workItem from="1546828920977" duration="34286000" />
+      <workItem from="1547082599161" duration="17870000" />
     </task>
     <task id="LOCAL-00001" summary="环境搭建">
       <created>1544090973312</created>
@@ -844,11 +696,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546079231051</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改框架结构">
+      <created>1546995503115</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546995503115</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修改框架结构">
+      <created>1547083516084</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547083516084</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150914000" />
+    <option name="totallyTimeSpent" value="183597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -862,7 +728,7 @@
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1058" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838883" visible="true" weight="0.23347548" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838883" visible="true" weight="0.23614073" />
       <window_info id="Structure" order="1" sideWeight="0.5016112" side_tool="true" weight="0.2553305" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -873,20 +739,20 @@
       <window_info id="Persistence" order="8" sideWeight="0.5016112" side_tool="true" weight="0.2553305" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42964554" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2556391" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3179377" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.40494093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.26852846" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32975295" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.40064448" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.21482277" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.18763326" />
+      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.17963752" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -918,372 +784,407 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/config/FooConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/config/AliyunSmsConfig.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/impl/DtoGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/VerificationServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/AbstractGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+        <state relative-caret-position="238">
+          <caret line="101" column="36" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/mymaven/org/springframework/cloud/spring-cloud-openfeign-core/2.0.2.RELEASE/spring-cloud-openfeign-core-2.0.2.RELEASE.jar!/org/springframework/cloud/openfeign/FeignClient.class">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/sourcegenerator/utils/GeneratorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+          <folding>
+            <element signature="e#2908#2909#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3178#3179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/entity/User.java" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/dto/PassportDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/dto/UserDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/config/FooController.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/SourceGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/mymaven/org/springframework/cloud/spring-cloud-openfeign-core/2.0.2.RELEASE/spring-cloud-openfeign-core-2.0.2.RELEASE.jar!/org/springframework/cloud/openfeign/FeignClientSpecification.class">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/feign/VerificationServiceFeign.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/entity/Passport.java" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-start-column="1" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/feign/UserServiceFeign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/MqService.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/VerificationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/web/controller/TestController.java" />
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/UserServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-config/src/main/java/com/yanchun/ConfigService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-message/src/main/java/com/yanchun/MessageServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/MqServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="166">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-message/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/VerificationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        <state relative-caret-position="-18">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-common/src/main/java/com/yanchun/common/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-377">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/entity/Passport.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-common/src/main/java/com/yanchun/common/entity/Passport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="jar://D:/mymaven/org/springframework/spring-core/5.0.11.RELEASE/spring-core-5.0.11.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="331">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/pom.xml">
+    <entry file="jar://D:/mymaven/org/springframework/spring-aop/5.0.11.RELEASE/spring-aop-5.0.11.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="246">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-config/src/main/resources/bootstrap.yml">
+    <entry file="jar://D:/mymaven/org/springframework/spring-aop/5.0.11.RELEASE/spring-aop-5.0.11.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="331">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-config/src/main/resources/configs/dev/spring-cloud-user.yml">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Remarks">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-config/src/main/resources/configs/dev/spring-cloud-zuul.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/src/main/java/com/yanchun/WebPcServer.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-config/src/main/resources/configs/dev/spring-cloud-user.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" selection-start-line="19" selection-start-column="7" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/yanchun/ZuulServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/LogAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/advice/SystemControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        <state relative-caret-position="493">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-api/spring-cloud-api-user/src/main/java/com/yanchun/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state relative-caret-position="374">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/repository/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/MySecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        <state relative-caret-position="493">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/vo/LoginReturnUserInfoVO.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/frombean/LoginFromBean.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/model/UserSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/RandomAuthenticationKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/RedisAuthorizationCodeServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-473">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/UserServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#966#967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mymaven/org/springframework/security/spring-security-core/5.0.10.RELEASE/spring-security-core-5.0.10.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mymaven/org/springframework/spring-beans/5.0.11.RELEASE/spring-beans-5.0.11.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <caret line="1219" selection-start-line="1219" selection-end-line="1219" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/ResultEnum.java">
+    <entry file="jar://D:/mymaven/org/springframework/security/spring-security-crypto/5.0.10.RELEASE/spring-security-crypto-5.0.10.RELEASE.jar!/org/springframework/security/crypto/password/PasswordEncoder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="68">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mymaven/org/springframework/security/spring-security-config/5.0.10.RELEASE/spring-security-config-5.0.10.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configurers/userdetails/AbstractDaoAuthenticationConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mymaven/org/springframework/security/spring-security-crypto/5.0.10.RELEASE/spring-security-crypto-5.0.10.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#2199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/RedisClientDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mymaven/org/springframework/security/oauth/spring-security-oauth2/2.2.1.RELEASE/spring-security-oauth2-2.2.1.RELEASE.jar!/org/springframework/security/oauth2/provider/endpoint/TokenEndpoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1523">
+          <caret line="65" column="70" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/VerificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        <state relative-caret-position="188">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/enums/LoginTypeEnum.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/AuthorizationServerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="186">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/PasswordEncoderConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+        <state relative-caret-position="-653">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResultBase.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserDetailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding>
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        <state relative-caret-position="334">
+          <caret line="32" column="86" lean-forward="true" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/base/ResponseBase.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-user/src/main/java/com/yanchun/user/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="317">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Remarks">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/yanchun/common/constant/PermitAllUrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-web-pc/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1339,11 +1240,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring-cloud-zuul</last-edited>
+          <last-edited>spring-cloud-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
