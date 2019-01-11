@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.AuthenticationEntryPoint;
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -58,10 +59,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	 */
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests()
+		http.formLogin()
+				 .loginProcessingUrl("/user/login")
+				.and()
+				.authorizeRequests()
 				.antMatchers(PermitAllUrl.permitAllUrl()).permitAll() // 放开权限的url
-				.anyRequest().authenticated().and()
-				.httpBasic().and().csrf().disable();
+				.anyRequest().authenticated()
+				.and().exceptionHandling().authenticationEntryPoint(macLoginUrlAuthenticationEntryPoint()) //未登录返回json
+				.and().httpBasic().and().csrf().disable();
 	}
 
+	@Bean
+	public AuthenticationEntryPoint macLoginUrlAuthenticationEntryPoint() {
+		return new MacLoginUrlAuthenticationEntryPoint();
+	}
 }

@@ -1,8 +1,10 @@
 package com.yanchun.common.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
+
 @Data
 public class Sms implements Serializable {
     private Long id;

@@ -1,11 +1,9 @@
 package com.yanchun.user.service.impl;
 
 
+import com.yanchun.common.model.UserSession;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
-import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -30,7 +28,14 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
 
     @Override
-    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        return null;
+    public UserDetails loadUserByUsername(String phone) throws UsernameNotFoundException {
+
+        // TODO 根据用户名，查找到对应的密码，与权限
+        String password = passwordEncoder.encode("11111111");
+        // 封装用户信息，并返回。参数分别是：用户名，密码，用户权限
+        UserSession userSession = new UserSession();
+        userSession.setPhone(phone);
+        userSession.setPhone(password);
+        return userSession;
     }
 }

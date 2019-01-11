@@ -9,7 +9,6 @@ import com.yanchun.common.utils.CodeUtil;
 import com.yanchun.common.utils.RedisUtil;
 import com.yanchun.common.utils.SendSmsUtils;
 import com.yanchun.user.service.VerificationService;
-import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

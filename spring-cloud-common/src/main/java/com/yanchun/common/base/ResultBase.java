@@ -39,7 +39,7 @@ public class ResultBase {
         return new ResponseBase(code, msg, data);
     }
 
-    public void printResult(Integer code, String msg, Object data) {
+    public static void printResult(Integer code, String msg, Object data) {
         ResponseBase.printResult(code, msg, data);
     }
 }

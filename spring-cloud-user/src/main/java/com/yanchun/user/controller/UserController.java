@@ -101,4 +101,13 @@ public class UserController extends ResultBase {
         }
         return systemError();
     }
+    @RequestMapping("/unlogin")
+    public ResponseBase unlogin() throws Exception {
+        try {
+           return error(ResultEnum.NOLOGIN_ERROR);
+        } catch (Exception e) {
+            LOGGER.error("==========Exception:", e);
+        }
+        return systemError();
+    }
 }
