@@ -10,32 +10,32 @@ import org.springframework.stereotype.Component;
 @Component
 public class ResultBase {
     // 返回成功
-    public ResponseBase success() {
+    public static ResponseBase success() {
         return setResult(ResultEnum.OPERATE_SUCCESS, null);
     }
 
     // 返回成功
-    public ResponseBase success(Object date) {
+    public static ResponseBase success(Object date) {
         return setResult(ResultEnum.OPERATE_SUCCESS, date);
     }
 
     // 返回失败
-    public ResponseBase systemError() {
+    public static ResponseBase systemError() {
         return setResult(ResultEnum.ERROR, null);
     }
 
     // 返回失败
-    public ResponseBase error(ResultEnum resultEnum) {
+    public static ResponseBase error(ResultEnum resultEnum) {
         return setResult(resultEnum, null);
     }
 
     // 通用
-    public ResponseBase setResult(ResultEnum resultEnum, Object data) {
+    public static ResponseBase setResult(ResultEnum resultEnum, Object data) {
         return new ResponseBase(resultEnum.getCode(), resultEnum.getMsg(), data);
     }
 
     // 通用
-    public ResponseBase setResult(Integer code, String msg, Object data) {
+    public static ResponseBase setResult(Integer code, String msg, Object data) {
         return new ResponseBase(code, msg, data);
     }
 

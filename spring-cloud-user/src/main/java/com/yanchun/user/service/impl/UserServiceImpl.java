@@ -16,6 +16,8 @@ import com.yanchun.user.repository.UserRepository;
 import com.yanchun.user.service.UserService;
 import com.yanchun.user.service.VerificationService;
 import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -31,7 +33,7 @@ import java.sql.Timestamp;
  */
 @RestController
 public class UserServiceImpl extends ResultBase implements UserService {
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
     @Autowired
     private UserRepository userRepository;
     @Autowired

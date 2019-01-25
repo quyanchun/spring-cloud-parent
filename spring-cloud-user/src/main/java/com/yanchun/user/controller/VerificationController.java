@@ -23,7 +23,7 @@ import java.util.HashMap;
  */
 @RestController
 @RequestMapping("/verification")
-public class VerificationController extends ResultBase {
+public class VerificationController  {
     private static final Logger LOGGER = LoggerFactory.getLogger(VerificationController.class);
     @Autowired
     private VerificationService verificationService;
@@ -33,10 +33,10 @@ public class VerificationController extends ResultBase {
         try {
             String key = verificationService.createSmsCode(phone, type);
             if(StringUtils.isEmpty(key))
-                return error(ResultEnum.OPERATE_ERROR);
+                return ResultBase.error(ResultEnum.OPERATE_ERROR);
             HashMap hashMap = new HashMap();
             hashMap.put("key", key);
-            return success(hashMap);
+            return ResultBase.success(hashMap);
         } catch (Exception e) {
             LOGGER.error("==========短信发送失败",e);
         }
@@ -48,8 +48,8 @@ public class VerificationController extends ResultBase {
         try {
             boolean flag = verificationService.matchSmsCode(matchCodeFromBean.getPhone(), matchCodeFromBean.getKey(), matchCodeFromBean.getSmsCode(), false);
             if (flag)
-               return success();
-            return error(ResultEnum.CODE_ERROR);
+               return ResultBase.success();
+            return ResultBase.error(ResultEnum.CODE_ERROR);
         } catch (Exception e) {
             LOGGER.error("==========短信验证失败：{}", JSON.toJSONString(matchCodeFromBean));
             LOGGER.error("==========Exception:", e);

@@ -20,7 +20,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	public UserDetailsService userDetailsService;
 	@Autowired
-	private BCryptPasswordEncoder passwordEncoder;
+	private CustomPasswordEncoder passwordEncoder;
 
 	/**
 	 * 全局用户信息<br>
@@ -59,9 +59,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	 */
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.formLogin()
-				 .loginProcessingUrl("/user/login")
-				.and()
+		http
+//                .formLogin()
+//				 .loginProcessingUrl("/user/login")
+//				.and()
 				.authorizeRequests()
 				.antMatchers(PermitAllUrl.permitAllUrl()).permitAll() // 放开权限的url
 				.anyRequest().authenticated()

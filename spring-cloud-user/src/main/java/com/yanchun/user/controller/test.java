@@ -1,5 +1,6 @@
 package com.yanchun.user.controller;
 
+import com.yanchun.common.utils.MD5;
 import org.apache.commons.lang.StringUtils;
 
 import java.text.SimpleDateFormat;
@@ -12,10 +13,10 @@ import java.util.Date;
 public class test {
     public static void main(String[] args) {
 
-        long time = new Date().getTime();
-        long l = time / 1000;
-
-        System.out.println(l);
+//        long time = new Date().getTime();
+//        long l = time / 1000;
+        String encode = MD5.encode("7");
+        System.out.println(encode);
 //        String s = "asdadadsada,eeeewaaa111,,,,a,,";
 //        String s1 = removeNull(s);
 //        System.out.println(s1);
